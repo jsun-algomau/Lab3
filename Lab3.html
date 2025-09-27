@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lab 3</title>
+  <style>
+    *{box-sizing:border-box}
+    html,body{margin:0;min-height:100vh;font-family:Arial,Helvetica,sans-serif;display:flex;flex-direction:column;background:#e7eaee}
+
+    
+    .navbar{background:#383838;color:#fff}
+    .nav-inner{width:100vw;max-width:none;margin:0;height:44px;display:flex;align-items:center;justify-content:space-between;padding:0 12px}
+    .navbar ul{display:flex;list-style:none;padding:0;margin:0}
+    .navbar li{margin-right:22px}
+    .navbar li:last-child{margin-right:0}
+    .navbar a{color:#fff;text-decoration:none}
+
+    
+    .container{width:100vw;max-width:none;margin:0;padding:0}
+
+    
+    .grid{display:grid;gap:0;grid-template-columns:1.1fr 1.8fr 1.1fr;grid-template-rows:190px 1fr;height:calc(100vh - 44px - 50px)}
+
+    .tile img{display:block;width:100%;height:100%;object-fit:cover;line-height:0}
+
+    
+    .i1{grid-column:1;grid-row:1/3}
+    
+    .i2{grid-column:2;grid-row:1}
+    .i3{grid-column:3;grid-row:1}
+    
+    .i56{grid-column:2/4;grid-row:2;background:#6f8b90;color:#eaf2f4;padding:24px 28px;line-height:1.6;overflow-y:auto}
+    .i56 h3{margin:0 0 14px 0;color:#fff}
+
+    footer{background:#333;color:#fff;text-align:center;position:fixed;left:0;right:0;bottom:0;height:50px;line-height:50px;padding:0;z-index:10}
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <div class="nav-inner">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Sign Up</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="grid">
+      
+      <div class="tile i1"><img src="images/pic1.jpg" alt="left tall"></div>
+      
+      <div class="tile i2"><img src="images/pic2.jpg" alt="center"></div>
+      <div class="tile i3"><img src="images/pic3.jpg" alt="right"></div>
+      
+      <div class="i56">
+        
+        <p>
+          Since World War I, achieving and maintaining air superiority has been considered essential for victory in conventional warfare.
+Fighters continued to be developed throughout World War I, to deny enemy aircraft and dirigibles the ability to gather information by reconnaissance over the battlefield. Early fighters were very small and lightly armed by later standards, and most were biplanes built with a wooden frame covered with fabric, and a maximum airspeed of about 100 mph (160 km/h). A successful German biplane, the Albatross, however, was built with a plywood shell, rather than fabric, which created a stronger, faster airplane. As control of the airspace over armies became increasingly important, all of the major powers developed fighters to support their military operations. Between the wars, wood was largely replaced in part or whole by metal tubing, and finally aluminum stressed skin structures (monocoque) began to predominate.
+By World War II, most fighters were all-metal monoplanes armed with batteries of machine guns or cannons and some were capable of speeds approaching 400 mph (640 km/h). Most fighters up to this point had one engine, but a number of twin-engine fighters were built; however they were found to be outmatched against single-engine fighters and were relegated to other tasks, such as night fighters equipped with radar sets.
+By the end of the war, turbojet engines were replacing piston engines as the means of propulsion, further increasing aircraft speed. Since the weight of the turbojet engine was far less than a piston engine, having two engines was no longer a handicap and one or two were used, depending on requirements. This in turn required the development of ejection seats so the pilot could escape, and G-suits to counter the much greater forces being applied to the pilot during maneuvers.
+Wings were made thinner and swept back to reduce transonic drag, which required new manufacturing methods to obtain sufficient strength. Skins were no longer sheet metal riveted to a structure, but milled from large slabs of alloy. The sound barrier was broken, and after a few false starts due to required changes in controls, speeds quickly reached Mach 2, past which aircraft cannot maneuver sufficiently to avoid attack.
+In the 1950s, radar homing missiles were developed, giving fighters the ability to engage aircraft from any aspect (front, sides, or rear), in bad weather, and at longer range.
+Air-to-air missiles largely replaced guns and rockets in the early 1960s since both were believed unusable at the speeds being attained, however the Vietnam War showed that guns still had a role to play, and most fighters built since then are fitted with cannon (typically between 20 and 30 mm (0.79 and 1.18 in) in caliber) in addition to missiles. Most modern combat aircraft can carry at least a pair of air-to-air missiles.
+In the 1970s, turbofans replaced turbojets, improving fuel economy enough that the last piston engine support aircraft could be replaced with jets, making multi-role combat aircraft possible. Honeycomb structures began to replace milled structures, and the first composite components began to appear on components subjected to little stress.
+With the steady improvements in computers, defensive systems have become increasingly efficient. To counter this, stealth technologies have been pursued by the United States, Russia, India and China. The first step was to find ways to reduce the aircraft's reflectivity to radar waves by burying the engines, eliminating sharp corners and diverting any reflections away from the radar sets of opposing forces. Various materials were found to absorb the energy from radar waves, and were incorporated into special finishes that have since found widespread application. Composite structures have become widespread, including major structural components, and have helped to counterbalance the steady increases in aircraft weight—most modern fighters are larger and heavier than World War II medium bombers.
+Because of the importance of air superiority, since the early days of aerial combat armed forces have constantly competed to develop technologically superior fighters and to deploy these fighters in greater numbers, and fielding a viable fighter fleet consumes a substantial proportion of the defense budgets of modern armed forces.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <footer>© 2025 Jie Sun. All rights reserved.</footer>
+</body>
+</html>
